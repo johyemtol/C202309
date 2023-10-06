@@ -6,7 +6,7 @@ int main() {
 	printf("1부터 2까지의 곱은 %d\n", multi(2));
 	printf("1부터 3까지의 곱은 %d\n", multi(3));
 	printf("1부터 5까지의 곱은 %d\n", multi(5));
-
+	return 0;
 	
 }
 
