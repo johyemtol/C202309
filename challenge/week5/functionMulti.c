@@ -1,16 +1,16 @@
 #include <stdio.h>
-//ÇÔ¼ö Á¤ÀÇÇØÁÖ±â
+//í•¨ìˆ˜ ì •ì˜í•´ì£¼ê¸°
 int multi(int value);
 
-void main() {
-	printf("1ºÎÅÍ 2±îÁöÀÇ °öÀº %d\n", multi(2));
-	printf("1ºÎÅÍ 3±îÁöÀÇ °öÀº %d\n", multi(3));
-	printf("1ºÎÅÍ 5±îÁöÀÇ °öÀº %d\n", multi(5));
+int main() {
+	printf("1ë¶€í„° 2ê¹Œì§€ì˜ ê³±ì€ %d\n", multi(2));
+	printf("1ë¶€í„° 3ê¹Œì§€ì˜ ê³±ì€ %d\n", multi(3));
+	printf("1ë¶€í„° 5ê¹Œì§€ì˜ ê³±ì€ %d\n", multi(5));
 
 	
 }
 
-//°ö¼À ÇÔ¼ö ÀÛ¼ºÇÏ±â
+//ê³±ì…ˆ í•¨ìˆ˜ ì‘ì„±í•˜ê¸°
 int multi(int value) {
 	long multi = 1;
 	int i = 1;
@@ -18,6 +18,6 @@ int multi(int value) {
 		multi = multi * i;
 		i = i + 1;
 	}
-	//ÃÑ°ö¼À Ãâ·Â
+	//ì´ê³±ì…ˆ ì¶œë ¥
 	return multi;
 }
