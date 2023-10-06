@@ -1,23 +1,23 @@
 #include <stdio.h>
-//ÇÔ¼ö Á¤ÀÇÇØÁÖ±â
+//í•¨ìˆ˜ ì •ì˜í•´ì£¼ê¸°
 int hapf(int value);
 
-void main() {
-	printf("1ºÎÅÍ 10±îÁöÀÇ ÇÕÀº %d\n", hapf(10));
-	printf("1ºÎÅÍ 100±îÁöÀÇ ÇÕÀº %d\n", hapf(100));
-	printf("1ºÎÅÍ 1000±îÁöÀÇ ÇÕÀº %d\n", hapf(1000));
+int main() {
+	printf("1ë¶€í„° 10ê¹Œì§€ì˜ í•©ì€ %d\n", hapf(10));
+	printf("1ë¶€í„° 100ê¹Œì§€ì˜ í•©ì€ %d\n", hapf(100));
+	printf("1ë¶€í„° 1000ê¹Œì§€ì˜ í•©ì€ %d\n", hapf(1000));
 
 }
 
-//ÇÔ¼ö ½Ä ¾²±â
+//í•¨ìˆ˜ ì‹ ì“°ê¸°
 int hapf(int value) {
 	int hap = 0;
 	int i = 1;
-	//ÇÕ ±¸ÇÏ±â
+	//í•© êµ¬í•˜ê¸°
 	while (i <= value) {
 		hap = hap + i;
 		i=i+1;
 	}
-	//ÇÕ Ãâ·ÂÇÏ±â
+	//í•© ì¶œë ¥í•˜ê¸°
 	return hap;
 }
