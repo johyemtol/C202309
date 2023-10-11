@@ -29,7 +29,7 @@ void classifyStudents(int scores[], char targetGrade) {
 
 //함수 성적 총합 출력
 int sumScores(int scores[]) {
-	int sum=0;
+	int sum = 0;
 	for (int i = 0; i < STUDENTS; i++) {
 		sum += scores[i];
 	}
@@ -38,7 +38,7 @@ int sumScores(int scores[]) {
 
 //함수 평균 출력
 double averageScores(int scores[]) {
-	int sum=0;
+	int sum = 0;
 	double average;
 	for (int i = 0; i < STUDENTS; i++) {
 		sum += scores[i];
