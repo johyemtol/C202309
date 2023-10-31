@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define STUDENTS 5
 
-//ÇÔ¼ö ÇĞ»ı µî±Ş ºĞ·ù
+//í•¨ìˆ˜ í•™ìƒ ë“±ê¸‰ ë¶„ë¥˜
 void classifyStudents(int scores[], char targetGrade) {
-	printf("ÇĞ»ı ¼ºÀû ºĞ·ù:\n");
+	printf("í•™ìƒ ì„±ì  ë¶„ë¥˜:\n");
 	char grade = ' ';
 	for (int i = 0; i < STUDENTS; i++) {
 		if (scores[i] >= 90) {
@@ -22,12 +22,12 @@ void classifyStudents(int scores[], char targetGrade) {
 			grade = 'F';
 		}
 		if (targetGrade == grade) {
-			printf("%d ÇĞ»ıÀº %c Á¡¼ö¸¦ ¹Ş¾Ò½À´Ï´Ù.\n", i + 1, targetGrade);
+			printf("%d í•™ìƒì€ %c ì ìˆ˜ë¥¼ ë°›ì•˜ìŠµë‹ˆë‹¤.\n", i + 1, targetGrade);
 		}
 	}
 }
 
-//ÇÔ¼ö ¼ºÀû ÃÑÇÕ Ãâ·Â
+//í•¨ìˆ˜ ì„±ì  ì´í•© ì¶œë ¥
 int sumScores(int scores[]) {
 	int sum = 0;
 	for (int i = 0; i < STUDENTS; i++) {
@@ -36,7 +36,7 @@ int sumScores(int scores[]) {
 	return sum;
 }
 
-//ÇÔ¼ö Æò±Õ Ãâ·Â
+//í•¨ìˆ˜ í‰ê·  ì¶œë ¥
 double averageScores(int scores[]) {
 	int sum = 0;
 	double average;
@@ -48,7 +48,7 @@ double averageScores(int scores[]) {
 	return average;
 }
 
-//ÇĞ»ıº° ¼ºÀû ¼øÀ§
+//í•™ìƒë³„ ì„±ì  ìˆœìœ„
 void printRanks(int scores[]) {
 	int cnt;
 	int rank[5];
@@ -62,33 +62,33 @@ void printRanks(int scores[]) {
 		rank[i] = cnt + 1;
 	}
 	for (int i = 0; i < STUDENTS; i++) {
-		printf("%d ÇĞ»ıÀÇ ¼øÀ§´Â %d ÀÔ´Ï´Ù.\n", i + 1, rank[i]);
+		printf("%d í•™ìƒì˜ ìˆœìœ„ëŠ” %d ì…ë‹ˆë‹¤.\n", i + 1, rank[i]);
 	}
 }
 
 int main() {
 	int scores[STUDENTS];
 
-	//scores ¹è¿­ ÀÔ·Â¹Ş±â
+	//scores ë°°ì—´ ì…ë ¥ë°›ê¸°
 	for (int i = 0; i < STUDENTS; i++) {
-		printf("ÇĞ»ı %dÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä: ", i + 1);
+		printf("í•™ìƒ %dì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”: ", i + 1);
 		scanf_s("%d", &scores[i]);
 	}
 
 	char ch = getchar();
 
-	//Æ¯Á¤Á¡¼ö Ã£±â
+	//íŠ¹ì •ì ìˆ˜ ì°¾ê¸°
 	char target;
-	printf("Æ¯Á¤ Á¡¼ö (A,B,C,D,F)¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+	printf("íŠ¹ì • ì ìˆ˜ (A,B,C,D,F)ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 	scanf_s("%c", &target, 1);
 
-	//ÇÔ¼ö Ãâ·Â
+	//í•¨ìˆ˜ ì¶œë ¥
 	classifyStudents(scores, target);
 	int sum = sumScores(scores);
 	double average = averageScores(scores);
-	printf("\nÇĞ»ıµé Á¡¼öÀÇ ÃÑ ÇÕÀº %d ÀÌ°í, Æò±Õ °ªÀº %lfÀÔ´Ï´Ù.\n", sum, average);
+	printf("\ní•™ìƒë“¤ ì ìˆ˜ì˜ ì´ í•©ì€ %d ì´ê³ , í‰ê·  ê°’ì€ %lfì…ë‹ˆë‹¤.\n", sum, average);
 
-	printSRanks(scores);
+	printRanks(scores);
 
 	return 0;
 }
