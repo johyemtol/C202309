@@ -51,7 +51,7 @@ double averageScores(int scores[]) {
 //학생별 성적 순위
 void printRanks(int scores[]) {
 	int cnt;
-	int rank[5];
+	int rank[5]={0,0,0,0,0};
 	for (int i = 0; i < STUDENTS; i++) {
 		cnt = 0;
 		for (int j = 0; j < STUDENTS; j++) {
@@ -67,7 +67,7 @@ void printRanks(int scores[]) {
 }
 
 int main() {
-	int scores[STUDENTS];
+	int scores[STUDENTS]={0,0,0,0,0};
 
 	//scores 배열 입력받기
 	for (int i = 0; i < STUDENTS; i++) {

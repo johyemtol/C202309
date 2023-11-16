@@ -28,7 +28,7 @@ void classifyStudents(int scores[], char targetGrade) {
 }
 
 int main() {
-	int scores[STUDENTS];
+	int scores[STUDENTS]={0,0,0,0,0};
 
 	for (int i = 0; i < STUDENTS; i++) {
 		printf("학생 %d의 성적을 입력하세요: ", i + 1);
