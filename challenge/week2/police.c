@@ -1,33 +1,33 @@
 #include <stdio.h>
 
 int main() {
-    //Á¤º¸ ÀÔ·Â¹Ş±â
+    //ì •ë³´ ì…ë ¥ë°›ê¸°
     char name[128];
-    printf("ÀÌ¸§?: ");
+    printf("ì´ë¦„?: ");
     scanf_s("%s", name,128);
     int age;
-    printf("³ªÀÌ?: ");
+    printf("ë‚˜ì´?: ");
     scanf_s("%d", &age); 
     
     double weight;
-    printf("¸ö¹«°Ô?: ");
+    printf("ëª¸ë¬´???ê²Œ?: ");
     scanf_s("%lf", &weight);
 
     float height;
-    printf("Å°?: ");
+    printf("í‚¤?: ");
     scanf_s("%f", &height);
 
     char what[512];
-    printf("ÁË¸ñ?: ");
-    scanf_s("%s", what,512); // ¹®ÀÚ¿­À» ÀÔ·Â ¹ŞÀ» ¶§ %s »ç¿ë
+    printf("ì£„ëª©?: ");
+    scanf_s("%s", what,512); // ë¬¸ìì—´ì„ ì…ë ¥ ë°›ì„ ë•Œ %s ì‚¬ìš©
 
-    //¹üÁËÀÚ Á¤º¸ Ãâ·Â
-    printf("----¹üÁËÀÚ Á¤º¸----\n");
-    printf("ÀÌ¸§       : %s\n", name);
-    printf("³ªÀÌ       : %d\n", age);
-    printf("¸ö¹«°Ô     : %lf\n", weight);
-    printf("Å°         : %f\n", height);
-    printf("ÁË¸ñ       : %s\n", what);
+    //ë²”ì£„ì ì •ë³´ ì¶œë ¥
+    printf("----ë²”ì£„ì ì •ë³´----\n");
+    printf("ì´ë¦„       : %s\n", name);
+    printf("ë‚˜ì´       : %d\n", age);
+    printf("ëª¸ë¬´ê²Œ     : %lf\n", weight);
+    printf("í‚¤         : %f\n", height);
+    printf("ì£„ëª©       : %s\n", what);
 
     return 0;
 }
